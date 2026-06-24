@@ -1,0 +1,32 @@
+{
+  "version": "2.0",
+  "dataset_id": "on004511",
+  "source": "openneuro",
+  "source_id": "ds004511",
+  "title": "Deception_data",
+  "authors": {
+    "Makowski, Dominique": {},
+    "Pham, Tam": {},
+    "Lau, Zen Juen": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds004511.v1.0.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.8.0",
+  "recording_modality": [
+    "beh",
+    "eeg"
+  ],
+  "datatypes": [
+    "beh",
+    "eeg"
+  ],
+  "acknowledgements": "Special thanks to An-Shu Te for helping with formatting this dataset in BIDS"
+}
