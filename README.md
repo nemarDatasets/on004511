@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004511-blue)](https://doi.org/10.82901/nemar.on004511)
+
 # Overview
 
 This dataset was collected in 2020 and comprises electroencephalography, physiological and behavioural data. The dataset includes both resting-state (eyes closed) and task-related neurophysiological signals acquired from 44 healthy individuals (ages: 21-40). The tasks administered to subjects include a spontaneous deception task (Gambling Game; GG) as well as a task assessing cognitive control (CC).
