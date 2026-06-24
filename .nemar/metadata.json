@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Deception_data",
+  "description": "This dataset comprises electroencephalography, physiological, and behavioral data collected from 44 healthy individuals (ages 21-40) during resting-state and task-based conditions. Participants completed a spontaneous deception task (Gambling Game) and cognitive control assessments involving processing speed, response selection, response inhibition, and conflict resolution. The dataset integrates concurrent EEG (128 channels, 3000 Hz), ECG, respiration, electrodermal activity, and electromyography recordings (4000 Hz), providing a multimodal neurophysiological resource for investigating deception, decision-making, and cognitive control mechanisms.",
+  "methods_description": "EEG signals were recorded using a TruScan 128 Research EEG system with electrodes placed according to the 10-5 system at a sampling rate of 3000 Hz. Physiological signals (ECG, respiration, EDA, EMG) were acquired via BioPac MP160 system at 4000 Hz. ECG used modified Lead II configuration, respiration was measured with an abdominal belt, EDA from fingers of the non-dominant hand, and EMG from corrugator muscles. Electrode impedance was maintained below 20 kOhm.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,12 +11,34 @@
     "Pham, Tam": {},
     "Lau, Zen Juen": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004511.v1.0.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
+    {
+      "term": "Deception"
+    },
+    {
+      "term": "Decision Making",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
+    },
+    {
+      "term": "Cognitive control"
+    },
+    {
+      "term": "Resting state"
+    },
+    {
+      "term": "Physiological signals"
+    },
+    {
+      "term": "Multimodal neuroimaging"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004511",
       "identifier_type": "URL",
@@ -29,72 +53,29 @@
       "identifier": "10.18112/openneuro.ds004511",
       "identifier_type": "DOI",
       "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004511.v1.0.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
   "modalities": [
     "beh",
     "eeg"
   ],
-  "resource_type_specific": "Neuroimaging Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "217.2 GB (271 files)"
   ],
   "formats": [
     ".edf",
     ".gz",
     ".json",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This dataset comprises electroencephalography, physiological, and behavioral data collected from 44 healthy individuals (ages 21-40) during resting-state and task-based conditions. Participants completed a spontaneous deception task (Gambling Game) and cognitive control assessments including processing speed, response selection, response inhibition, and conflict resolution tasks. The dataset includes concurrent EEG recordings at 3000 Hz using a 128-electrode system and physiological measurements (ECG, respiration, electrodermal activity, and electromyography) at 4000 Hz, providing a comprehensive multimodal neurophysiological resource for investigating deception, decision-making, and cognitive control mechanisms.",
-  "methods_description": "EEG signals were recorded using a TruScan 128 Research EEG system with electrodes placed according to the 10-5 system at a sampling rate of 3000 Hz, with impedance maintained below 20 kOhm. Physiological signals (ECG, respiration, electrodermal activity, and electromyography) were acquired at 4000 Hz using a BioPac MP160 system. The spontaneous deception task consisted of 144 rounds of a gambling game with monetary stakes. The cognitive control task included 60 trials of processing speed, 80 trials of response selection, 160 trials of response inhibition, and 160 trials of conflict resolution.",
-  "keywords": [
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "Deception",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "Decision Making",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
-    },
-    {
-      "term": "Cognitive Control",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "Resting State",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "Electrocardiography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
-    },
-    {
-      "term": "Electromyography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004576"
-    },
-    {
-      "term": "Galvanic Skin Response",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005712"
-    },
-    {
-      "term": "Gambling",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "Risk-Taking",
-      "subject_scheme": "MeSH"
-    }
-  ],
-  "source_hash": "49f310e84c236de1c1d1be011d976e76482e676067721fae200ebc934b73974b"
+  "source_hash": "68ba60bc571fdc9721d9321a523841feadafa33a2573acb294c810fb05e4c5c7"
 }
