@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Deception_data",
-  "description": "This dataset comprises electroencephalography, physiological, and behavioral data collected from 44 healthy individuals (ages 21-40) during resting-state and task-based conditions. Participants completed a spontaneous deception task (Gambling Game) and cognitive control assessments involving processing speed, response selection, response inhibition, and conflict resolution. The dataset integrates concurrent EEG (128 channels, 3000 Hz), ECG, respiration, electrodermal activity, and electromyography recordings (4000 Hz), providing a multimodal neurophysiological resource for investigating deception, decision-making, and cognitive control mechanisms.",
-  "methods_description": "EEG signals were recorded using a TruScan 128 Research EEG system with electrodes placed according to the 10-5 system at a sampling rate of 3000 Hz. Physiological signals (ECG, respiration, EDA, EMG) were acquired via BioPac MP160 system at 4000 Hz. ECG used modified Lead II configuration, respiration was measured with an abdominal belt, EDA from fingers of the non-dominant hand, and EMG from corrugator muscles. Electrode impedance was maintained below 20 kOhm.",
+  "description": "This dataset comprises EEG, physiological (ECG, respiration, EDA, EMG), and behavioural data collected in 2020 from 44 healthy adults (ages 21-40) during resting-state and task-based conditions. Tasks included a spontaneous deception paradigm (a gambling game requiring participants to report predictions truthfully or deceptively) and a cognitive control battery assessing processing speed, response selection, response inhibition, and conflict resolution. The dataset supports research into the neurophysiological correlates of deception and cognitive control processes.",
+  "methods_description": "EEG signals were recorded using the TruScan 128 Research EEG system with electrodes placed according to the standard 10-5 system, sampled at 3000Hz, with impedance kept below 20 kOhm. Ground electrode was placed on the zygomatic bone and reference electrodes on the mastoids; channels 124 and 125 recorded vertical EOG. Physiological signals (ECG, RSP, EDA, EMG) were recorded at 4000Hz using the BioPac MP160 system and AcqKnowledge 5.0 software, with ECG collected via a modified Lead II configuration, RSP via a respiration belt, EDA via finger electrodes, and EMG via corrugator muscle activity.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,7 +18,9 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "Deception"
+      "term": "Deception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008192"
     },
     {
       "term": "Decision Making",
@@ -26,26 +28,30 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
     },
     {
-      "term": "Cognitive control"
+      "term": "Cognitive Control"
     },
     {
       "term": "Resting state"
     },
     {
-      "term": "Physiological signals"
+      "term": "Electrocardiography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
     },
     {
-      "term": "Multimodal neuroimaging"
+      "term": "Galvanic Skin Response",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005712"
+    },
+    {
+      "term": "Electromyography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004576"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004511",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004511",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -58,6 +64,11 @@
       "identifier": "10.18112/openneuro.ds004511.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004511",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
