@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Deception_data",
-  "description": "This dataset comprises EEG, physiological (ECG, respiration, EDA, EMG), and behavioural data collected in 2020 from 44 healthy adults (ages 21-40) during resting-state and task-based conditions. Tasks included a spontaneous deception paradigm (a gambling game requiring participants to report predictions truthfully or deceptively) and a cognitive control battery assessing processing speed, response selection, response inhibition, and conflict resolution. The dataset supports research into the neurophysiological correlates of deception and cognitive control processes.",
-  "methods_description": "EEG signals were recorded using the TruScan 128 Research EEG system with electrodes placed according to the standard 10-5 system, sampled at 3000Hz, with impedance kept below 20 kOhm. Ground electrode was placed on the zygomatic bone and reference electrodes on the mastoids; channels 124 and 125 recorded vertical EOG. Physiological signals (ECG, RSP, EDA, EMG) were recorded at 4000Hz using the BioPac MP160 system and AcqKnowledge 5.0 software, with ECG collected via a modified Lead II configuration, RSP via a respiration belt, EDA via finger electrodes, and EMG via corrugator muscle activity.",
+  "description": "This dataset contains EEG, physiological, and behavioural recordings collected in 2020 from 44 healthy adults aged 21-40. It includes eyes-closed resting-state recordings and two tasks: a spontaneous deception task (a gambling game with self-reported dice-roll predictions) and a cognitive control task battery. The battery covers processing speed, response selection, response inhibition, and conflict resolution.",
+  "methods_description": "EEG was recorded with a TruScan 128 Research EEG system using the 10-5 electrode placement, at a 3000 Hz sampling rate and with impedance kept below 20 kOhm. Mastoid electrodes served as references, and two channels were placed above and below the eyes for vertical EOG. Physiological signals (ECG, respiration, electrodermal activity, and corrugator EMG) were recorded at 4000 Hz with a BioPac MP160 system and AcqKnowledge 5.0 software. In the gambling game, participants made 144 dice-roll predictions with bets of 10 to 80 cents. The cognitive control task comprised 60 processing speed trials, 80 response selection trials, 160 response inhibition trials, and 160 conflict resolution trials.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -28,25 +28,13 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
     },
     {
-      "term": "Cognitive Control"
+      "term": "cognitive control"
     },
     {
-      "term": "Resting state"
+      "term": "resting state"
     },
     {
-      "term": "Electrocardiography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
-    },
-    {
-      "term": "Galvanic Skin Response",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005712"
-    },
-    {
-      "term": "Electromyography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004576"
+      "term": "physiological signals"
     }
   ],
   "related_identifiers": [
@@ -78,7 +66,7 @@
     "eeg"
   ],
   "sizes": [
-    "217.2 GB (271 files)"
+    "202 GB (271 files)"
   ],
   "formats": [
     ".edf",
